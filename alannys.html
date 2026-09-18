@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alannys Salon Spa | Beleza, Estética e Bem-Estar em São José do Rio Preto</title>
-    <meta name="description" content="Salão de beleza e spa em São José do Rio Preto. Cabelos, estética, unhas, massagens e tratamentos de beleza. Agende seu horário!">
+    <meta name="description" content="Salão de beleza e spa em São José do Rio Preto. Cabelos, estética, unhas, massagens e tratamentos. Agende seu horário!">
     <meta name="keywords" content="salão de beleza São José do Rio Preto, spa, estética, cabelo, unhas, manicure, pedicure, massagem, Alannys">
     <meta name="author" content="Alannys Salon Spa">
     <meta name="theme-color" content="#c97b84">
-
     <meta property="og:title" content="Alannys Salon Spa - Beleza e Bem-Estar em São José do Rio Preto">
-    <meta property="og:description" content="Cabelos, estética, unhas, massagens e tratamentos de beleza com atendimento personalizado.">
+    <meta property="og:description" content="Cabelos, estética, unhas, massagens e tratamentos com atendimento personalizado.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
 
@@ -26,13 +25,11 @@
                 extend: {
                     colors: {
                         'rose': { 50:'#fdf2f4',100:'#fce7eb',200:'#f9d0d8',300:'#f4aab8',400:'#ec7f93',500:'#e05c74',600:'#c97b84',700:'#a84d62',800:'#8a3d50',900:'#733647' },
-                        'gold': { 50:'#fdf9f0',100:'#faf0dc',200:'#f5e0b9',300:'#efc98c',400:'#e8ae5c',500:'#e0983a',600:'#d17d2e',700:'#ae5f26',800:'#8b4a24',900:'#723d22' },
                         'dark': { 700:'#2d1f23',800:'#1f1518',900:'#130d0f' }
                     },
                     fontFamily: { 'display':['Playfair Display','serif'], 'body':['Inter','sans-serif'] },
                     animation: {
-                        'pulse-slow': 'pulse 4s cubic-bezier(0.4,0,0.6,1) infinite',
-                        'spin-slow': 'spin 1.2s linear infinite'
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4,0,0.6,1) infinite'
                     }
                 }
             }
@@ -53,7 +50,7 @@
         #header{transition:all .3s ease}
         #header.scrolled{background:rgba(255,255,255,.98);box-shadow:0 4px 20px rgba(0,0,0,.08);backdrop-filter:blur(10px)}
         .gradient-text{background:linear-gradient(135deg,#c97b84 0%,#2d1f23 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-        .hero-gradient{background:linear-gradient(135deg,rgba(19,13,15,.92) 0%,rgba(168,77,98,.85) 100%)}
+        .hero-gradient{background:linear-gradient(135deg,rgba(19,13,15,.88) 0%,rgba(168,77,98,.75) 100%)}
         .accordion-content{max-height:0;overflow:hidden;transition:max-height .4s ease}
         .accordion-content.open{max-height:400px}
         .accordion-item.open .accordion-icon{transform:rotate(180deg)}
@@ -64,15 +61,12 @@
         ::-webkit-scrollbar{width:10px}
         ::-webkit-scrollbar-track{background:#f1f5f9}
         ::-webkit-scrollbar-thumb{background:#c97b84;border-radius:5px}
-        ::-webkit-scrollbar-thumb:hover{background:#a84d62}
         #loader{position:fixed;inset:0;background:#fff;z-index:9999;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:opacity .5s ease,visibility .5s ease}
         #loader.hide{opacity:0;visibility:hidden}
         .loader-ring{width:56px;height:56px;border:3px solid #fce7eb;border-top-color:#c97b84;border-radius:50%;animation:spin 1s linear infinite;margin-bottom:16px}
         a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #c97b84;outline-offset:2px;border-radius:6px}
         #backTop{transition:all .3s ease;opacity:0;visibility:hidden;transform:translateY(10px)}
         #backTop.show{opacity:1;visibility:visible;transform:translateY(0)}
-        .team-photo{transition:transform .5s ease}
-        .team-card:hover .team-photo{transform:scale(1.08)}
         .gallery-item{overflow:hidden;position:relative;cursor:pointer}
         .gallery-item img{transition:transform .6s cubic-bezier(.4,0,.2,1)}
         .gallery-item:hover img{transform:scale(1.1)}
@@ -86,13 +80,11 @@
 </head>
 <body class="font-body text-gray-700 antialiased">
 
-    <!-- Loading -->
     <div id="loader">
         <div class="loader-ring"></div>
         <p class="font-display font-bold text-dark-800 tracking-wider text-sm">ALANNYS SALON SPA</p>
     </div>
 
-    <!-- Header -->
     <header id="header" class="fixed top-0 left-0 right-0 z-50 py-3 bg-white/95">
         <div class="container mx-auto px-4 flex justify-between items-center">
             <a href="#home" class="flex items-center gap-2 group" aria-label="Alannys Salon Spa - Início">
@@ -106,7 +98,6 @@
             <nav class="hidden lg:flex items-center gap-7" aria-label="Menu principal">
                 <a href="#sobre" class="text-sm font-medium text-gray-700 hover:text-rose-600 transition">Sobre</a>
                 <a href="#servicos" class="text-sm font-medium text-gray-700 hover:text-rose-600 transition">Serviços</a>
-                <a href="#equipe" class="text-sm font-medium text-gray-700 hover:text-rose-600 transition">Equipe</a>
                 <a href="#galeria" class="text-sm font-medium text-gray-700 hover:text-rose-600 transition">Galeria</a>
                 <a href="#faq" class="text-sm font-medium text-gray-700 hover:text-rose-600 transition">FAQ</a>
                 <a href="#contato" class="bg-rose-600 hover:bg-rose-700 text-white text-sm font-semibold px-5 py-2.5 rounded-full transition shadow-lg shadow-rose-600/30">Agendar</a>
@@ -121,7 +112,6 @@
             <div class="px-4 py-4 space-y-1">
                 <a href="#sobre" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-rose-50 hover:text-rose-700 font-medium">Sobre</a>
                 <a href="#servicos" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-rose-50 hover:text-rose-700 font-medium">Serviços</a>
-                <a href="#equipe" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-rose-50 hover:text-rose-700 font-medium">Equipe</a>
                 <a href="#galeria" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-rose-50 hover:text-rose-700 font-medium">Galeria</a>
                 <a href="#processo" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-rose-50 hover:text-rose-700 font-medium">Como funciona</a>
                 <a href="#faq" class="block px-4 py-3 rounded-lg text-gray-700 hover:bg-rose-50 hover:text-rose-700 font-medium">FAQ</a>
@@ -133,7 +123,7 @@
     <!-- Hero -->
     <section id="home" class="relative min-h-screen flex items-center pt-24 pb-20 overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80" alt="" class="w-full h-full object-cover" loading="eager">
+            <img src="hero.jpg" alt="Alannys Salon Spa" class="w-full h-full object-cover" loading="eager">
             <div class="absolute inset-0 hero-gradient"></div>
         </div>
         <div class="container mx-auto px-4 relative z-10">
@@ -143,7 +133,7 @@
                     Beleza, estética e bem-estar em São José do Rio Preto
                 </span>
                 <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white leading-[1.1] mb-6 reveal">
-                    Você merece se sentir <span class="text-rose-300">radiante</span>.
+                    Seja sua melhor <span class="text-rose-300">versão</span>.
                 </h1>
                 <p class="text-lg md:text-xl text-gray-100/90 mb-10 max-w-2xl reveal leading-relaxed">
                     Cabelos, estética, unhas, massagens e tratamentos de beleza em um só lugar. Uma experiência completa de cuidado e autoestima.
@@ -210,7 +200,7 @@
                 <div class="relative reveal">
                     <div class="absolute -top-6 -left-6 w-32 h-32 bg-rose-100 rounded-3xl -z-10"></div>
                     <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-dark-700/5 rounded-3xl -z-10"></div>
-                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80" alt="Ambiente da Alannys Salon Spa" class="rounded-3xl shadow-2xl w-full object-cover h-[500px]" loading="lazy">
+                    <img src="sobre.jpg" alt="Ambiente da Alannys Salon Spa" class="rounded-3xl shadow-2xl w-full object-cover h-[500px]" loading="lazy">
                     <div class="absolute bottom-6 left-6 bg-white rounded-2xl shadow-xl p-4 flex items-center gap-3">
                         <div class="w-12 h-12 bg-rose-100 rounded-xl flex items-center justify-center text-rose-600 text-xl"><i class="fas fa-spa"></i></div>
                         <div>
@@ -246,7 +236,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Cabelos -->
                 <article class="service-card reveal bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-rose-50 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition"></div>
                     <div class="relative">
@@ -262,7 +251,6 @@
                     </div>
                 </article>
 
-                <!-- Estética -->
                 <article class="service-card reveal bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-rose-50 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition"></div>
                     <div class="relative">
@@ -278,7 +266,6 @@
                     </div>
                 </article>
 
-                <!-- Unhas -->
                 <article class="service-card reveal bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-rose-50 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition"></div>
                     <div class="relative">
@@ -294,7 +281,6 @@
                     </div>
                 </article>
 
-                <!-- Bem-Estar -->
                 <article class="service-card reveal bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl border border-gray-100 relative overflow-hidden group">
                     <div class="absolute top-0 right-0 w-40 h-40 bg-rose-50 rounded-full -mr-20 -mt-20 group-hover:scale-110 transition"></div>
                     <div class="relative">
@@ -313,53 +299,6 @@
         </div>
     </section>
 
-    <!-- Equipe -->
-    <section id="equipe" class="py-20 md:py-28 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-2xl mx-auto text-center mb-16 reveal">
-                <span class="inline-block text-xs font-bold tracking-widest text-rose-600 uppercase mb-3">Nossa equipe</span>
-                <h2 class="text-3xl md:text-5xl font-display font-bold text-dark-800 mb-4">Profissionais que cuidam de você</h2>
-                <p class="text-gray-600">Conheça quem vai te atender com todo carinho e profissionalismo.</p>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <article class="team-card reveal bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-gray-100">
-                    <div class="aspect-[4/5] overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&w=600&q=80" alt="Cabeleireira da Alannys Salon Spa" class="w-full h-full object-cover team-photo" loading="lazy">
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="font-display font-bold text-dark-800 text-lg">Equipe de Cabelo</h3>
-                        <p class="text-rose-600 text-sm font-semibold mb-3">Cabeleireiros</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">Especialistas em cortes, coloração e tratamentos capilares.</p>
-                    </div>
-                </article>
-
-                <article class="team-card reveal bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-gray-100">
-                    <div class="aspect-[4/5] overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=600&q=80" alt="Esteticista da Alannys Salon Spa" class="w-full h-full object-cover team-photo" loading="lazy">
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="font-display font-bold text-dark-800 text-lg">Equipe de Estética</h3>
-                        <p class="text-rose-600 text-sm font-semibold mb-3">Esteticistas</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">Profissionais especializadas em cuidados faciais e corporais.</p>
-                    </div>
-                </article>
-
-                <article class="team-card reveal bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition border border-gray-100">
-                    <div class="aspect-[4/5] overflow-hidden">
-                        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=600&q=80" alt="Manicure da Alannys Salon Spa" class="w-full h-full object-cover team-photo" loading="lazy">
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="font-display font-bold text-dark-800 text-lg">Equipe de Unhas</h3>
-                        <p class="text-rose-600 text-sm font-semibold mb-3">Manicures</p>
-                        <p class="text-gray-600 text-sm leading-relaxed">Profissionais especializadas em manicure, pedicure e nail art.</p>
-                    </div>
-                </article>
-            </div>
-            <p class="text-center text-xs text-gray-400 mt-8 italic">*Substitua pelos nomes e fotos reais da equipe.</p>
-        </div>
-    </section>
-
     <!-- Galeria -->
     <section id="galeria" class="py-20 md:py-28 bg-gray-50">
         <div class="container mx-auto px-4">
@@ -371,22 +310,21 @@
 
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
                 <div class="gallery-item rounded-2xl col-span-2 row-span-2 reveal">
-                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80" alt="Recepção do salão" class="w-full h-full object-cover" loading="lazy">
+                    <img src="hero.jpg" alt="Entrada do salão" class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <div class="gallery-item rounded-2xl reveal">
-                    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=600&q=80" alt="Espaço de cabelo" class="w-full h-full object-cover" loading="lazy">
+                    <img src="galeria1.jpg" alt="Salão amplo" class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <div class="gallery-item rounded-2xl reveal">
-                    <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80" alt="Sala de estética" class="w-full h-full object-cover" loading="lazy">
+                    <img src="galeria2.jpg" alt="Recepção" class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <div class="gallery-item rounded-2xl reveal">
-                    <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=600&q=80" alt="Ambiente de spa" class="w-full h-full object-cover" loading="lazy">
+                    <img src="sobre.jpg" alt="Atendimento" class="w-full h-full object-cover" loading="lazy">
                 </div>
                 <div class="gallery-item rounded-2xl reveal">
-                    <img src="https://images.unsplash.com/photo-1600948836101-f9ffda59d250?auto=format&fit=crop&w=600&q=80" alt="Detalhes do salão" class="w-full h-full object-cover" loading="lazy">
+                    <img src="galeria1.jpg" alt="Espaço interno" class="w-full h-full object-cover" loading="lazy">
                 </div>
             </div>
-            <p class="text-center text-xs text-gray-400 mt-6 italic">*Substitua pelas fotos reais do salão.</p>
         </div>
     </section>
 
@@ -537,13 +475,7 @@
     <!-- Mapa -->
     <section class="relative">
         <div class="h-[450px] w-full">
-            <iframe 
-                src="https://www.google.com/maps?q=-20.8080556,-49.3469444&z=17&output=embed" 
-                width="100%" height="100%" style="border:0;" 
-                allowfullscreen="" loading="lazy" 
-                referrerpolicy="no-referrer-when-downgrade" 
-                title="Localização Alannys Salon Spa">
-            </iframe>
+            <iframe src="https://www.google.com/maps?q=-20.8080556,-49.3469444&z=17&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Localização Alannys Salon Spa"></iframe>
         </div>
     </section>
 
@@ -574,7 +506,6 @@
                     <ul class="space-y-2 text-sm">
                         <li><a href="#sobre" class="hover:text-rose-400 transition">Sobre nós</a></li>
                         <li><a href="#servicos" class="hover:text-rose-400 transition">Serviços</a></li>
-                        <li><a href="#equipe" class="hover:text-rose-400 transition">Equipe</a></li>
                         <li><a href="#galeria" class="hover:text-rose-400 transition">Galeria</a></li>
                         <li><a href="#faq" class="hover:text-rose-400 transition">FAQ</a></li>
                         <li><a href="#contato" class="hover:text-rose-400 transition">Contato</a></li>
@@ -600,19 +531,16 @@
         </div>
     </footer>
 
-    <!-- WhatsApp flutuante -->
     <a href="https://wa.me/551732258808?text=Ol%C3%A1%21%20Gostaria%20de%20agendar%20um%20hor%C3%A1rio%20na%20Alannys%20Salon%20Spa." target="_blank" rel="noopener"
        class="whatsapp-float fixed bottom-24 right-6 z-40 w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-2xl transition hover:scale-110"
        aria-label="Fale conosco no WhatsApp">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
 
-    <!-- Back to top -->
     <button id="backTop" class="fixed bottom-6 right-6 z-40 w-14 h-14 bg-rose-600 hover:bg-rose-700 text-white rounded-full flex items-center justify-center shadow-2xl" aria-label="Voltar ao topo">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Cookie banner LGPD -->
     <div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-50 bg-dark-800 text-white px-4 py-4 shadow-2xl">
         <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
             <p class="text-sm text-gray-200 text-center md:text-left">
